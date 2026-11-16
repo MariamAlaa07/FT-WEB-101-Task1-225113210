@@ -1,0 +1,191 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg-color: #f4f6f9;
+    --text-color: #333333;
+    --primary-color: #3b71ca;
+    --card-bg: #faf6f0;
+    --card-text: #666666;
+    --border-color: #e0dcd3;
+}
+
+body.dark {
+    --bg-color: #18191a;
+    --text-color: #e4e6eb;
+    --primary-color: #6ea8fe;
+    --card-bg: #242526;
+    --card-text: #b0b3b8;
+    --border-color: #3a3b3c;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
+
+/* Header & Navbar */
+header {
+    padding: 20px 5%;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile Photo */
+.profile-section {
+    margin: 20px 0 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+}
+
+/* Cards Section */
+.interests-section h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px 20px;
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--card-text);
+    font-size: 0.95rem;
+}
+
+/* Form Section */
+.contact-section {
+    margin: 50px auto 30px;
+    max-width: 450px;
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.theme-control {
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
